@@ -1,5 +1,5 @@
 # tasks-planner
-"Tasks Planner" is an APP to display tasks in a list where the user can assign an urgency level to it and erase it from the list when is completed. FRONTEND: HTML5, CSS3, React.JS (React Context and Hooks with emphasis in useReducer).
+"Tasks Planner" is an APP to display tasks in a list where the user can create them, assign an urgency level to them and erase them from the list when completed. FRONTEND: HTML5, CSS3, React.JS (React Context and Hooks with emphasis in useReducer).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
