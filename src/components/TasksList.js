@@ -7,7 +7,7 @@ const TasksList = () => {
   const { tasks } = useContext(TasksContext)
 
   return tasks.length ? (
-    <ul>
+    <ul className="tasks_list">
       { tasks.map(task => {
         return <Task task={task} key={task.id}/>
       })}

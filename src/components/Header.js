@@ -6,7 +6,7 @@ const Header = () => {
   const { tasks } = useContext(TasksContext)
 
   return(
-    <header>
+    <header className="header">
       <h1>Tasks List</h1>
       <h2>You have {tasks.length} tasks to accomplish!</h2>
     </header>

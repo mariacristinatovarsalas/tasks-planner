@@ -9,14 +9,14 @@ const Task = ({ task }) => {
   const backgroundColors = () => {
 
     switch(color) {
-      case "Urgent":
-        setColor("red")
+      case "urgent":
+        setColor("#9C8B3E")
         break
-      case "Normal":
-        setColor("yellow")
+      case "normal":
+        setColor("#D6BC42")
         break
-      case "Not Urgent":
-        setColor("green")
+      case "not_urgent":
+        setColor("#FFE25F")
         break
     }
   }
@@ -27,14 +27,14 @@ const Task = ({ task }) => {
 
 
   return (
-    <li style={{backgroundColor: color}}> 
-      <div>{task.name}</div>
-      <div>{task.urgency}</div>
-      <div>
-        <button onClick={() => dispatch({ type: 'DELETE_TASK', id: task.id })}>Delete</button>
-        <button>Urgent</button>
-        <button>Normal</button>
-        <button>Not Urgent</button>
+    <li style={{backgroundColor: color}} className="task"> 
+      <div className="btns_container">{task.name}</div>
+      {/* <div>{task.urgency}</div> */}
+      <div className="btns_container">
+        <button onClick={() => dispatch({ type: 'DELETE_TASK', id: task.id })} className="btn">Delete</button>
+        <button onClick={()=>setColor("urgent")} className="semaphorus dark"></button>
+        <button onClick={()=>setColor("normal")} className="semaphorus medium"></button>
+        <button onClick={()=>setColor("not_urgent")} className="semaphorus light"></button>
       </div>
     </li>
   )

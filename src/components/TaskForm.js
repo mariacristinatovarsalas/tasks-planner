@@ -9,7 +9,7 @@ const TaskForm = () => {
 
   const assignUrgency = (e) => {
     e.preventDefault()
-    setUrgency(e.target.innerHTML)
+    setUrgency(e.target.id)
   }
 
   const createTask= (e) => {
@@ -22,16 +22,16 @@ const TaskForm = () => {
 
 
   return(
-    <form>
-      <div>
-        <input type="text" placeholder="add new task" value={name} required
+    <form className="form">
+      <div className="btns_container">
+        <input type="text" placeholder=" Add new task" value={name} required
         onChange={(e) => setName(e.target.value)}/>
-        <button onClick={(e) => createTask(e)}>Crear</button>
       </div>
-      <div>
-        <button onClick={(e) => assignUrgency(e)}>Urgent</button>
-        <button onClick={(e) => assignUrgency(e)}>Normal</button>
-        <button onClick={(e) => assignUrgency(e)}>Not Urgent</button>
+      <div className="btns_container">
+        <button id="urgent" onClick={(e) => assignUrgency(e)} className="semaphorus dark"></button>
+        <button id="normal" onClick={(e) => assignUrgency(e)} className="semaphorus medium"></button>
+        <button id="not_urgent" onClick={(e) => assignUrgency(e)} className="semaphorus light"></button>
+        <button onClick={(e) => createTask(e)} className="btn">Create</button>
       </div>
     </form>
   )
