@@ -6,7 +6,7 @@ import TaskForm from './components/TaskForm'
 
 function App() {
   return (
-    <div className="app">
+    <div className="app flex">
       <TasksContextProvider>
         <Header />
         <TasksList />

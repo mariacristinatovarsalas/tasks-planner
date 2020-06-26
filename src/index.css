@@ -5,10 +5,23 @@
   font-family: 'Pangolin', cursive;
 }
 
+body {
+  background-color: #4D321E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
 .app {
-  margin: 15px auto;
-  width: 90%;
-  max-width: 700px;
+  max-width: 50vw;
+  height: 100%;
   padding: 3vw;
   border: 8px solid #76692B;
   border-radius: 13px;
@@ -16,7 +29,8 @@
 }
 
 .header {
-  margin-bottom: 2vw;
+  width: 95%;
+  margin-bottom: 0vw;
   padding: 1.5vw 0;
   text-align: center;
   border: 8px solid #76692B;
@@ -33,14 +47,16 @@ h2 {
 }
 
 .tasks_list {
-  padding-top: 1vw;
+  width: 95%;
+  padding: 3vw 0;
   border: 8px solid #76692B;
   border-radius: 13px;
   background-color: #FFE670;
 }
 
 .task {
-  margin-bottom: 1vw;
+  width: 85%;
+  margin: 0.5vw 0;
   padding: 1vw;
   font-size: 1.5vw;
   border: 8px solid #76692B;
@@ -55,20 +71,20 @@ h2 {
 }
 
 .btn {
-  width: 5vw;
-  height: 1.5vw;
+  width: 7vw;
+  height: 2vw;
   margin: 0 1vw;
   font-weight: bold;
+  font-size: 1.5vw;
   border: 2px solid black;
-  border-radius: 12px;
+  border-radius: 13px;
   background-color: lightgrey;
 }
 
 ul li {
   list-style-type: none;
-  margin-right: 3.5vw;
   font-weight: bold;
-  height: 1vw;
+  /* height: 1vw; */
 }
 
 .semaphorus {
@@ -91,8 +107,9 @@ ul li {
 }
 
 .form {
-  margin-top: 2vw;
-  padding: 1vw 3vw;
+  width: 90%;
+  margin-top: 0vw;
+  padding: 1vw 1vw;
   border: 8px solid #76692B;
   border-radius: 13px;
   display: flex;
@@ -102,6 +119,53 @@ ul li {
 
 input {
   margin: 1vw;
-  width: 25vw;
+  width: 22vw;
   height: 2vw;
+}
+
+ul {
+  padding: 0;   
+}
+
+.thing_container {
+  max-width: 18vw;
+  font-size: 2vw;
+  text-align: left;
+  word-break: break-word;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+  .app {
+    width: 80vw;
+    height: 90%;
+    max-width: 90vw;
+  }
+
+}
+
+@media (max-width: 599px) {
+
+  .app {
+    width: 80vw;
+    height: 90%;
+    max-width: 90vw;
+  }
+
+  .thing_container {
+    font-size: 3vw;
+    max-width: 45vw;
+  }
+
+  .semaphorus {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .btn {
+    width: 10vw;
+    height: 3.5vw;
+    font-size: 2.5vw;
+  }
+
 }

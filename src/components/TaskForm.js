@@ -31,7 +31,7 @@ const TaskForm = () => {
         <button id="urgent" onClick={(e) => assignUrgency(e)} className="semaphorus dark"></button>
         <button id="normal" onClick={(e) => assignUrgency(e)} className="semaphorus medium"></button>
         <button id="not_urgent" onClick={(e) => assignUrgency(e)} className="semaphorus light"></button>
-        <button onClick={(e) => createTask(e)} className="btn">Create</button>
+        <button onClick={(e) => createTask(e)} className="btn flex">Create</button>
       </div>
     </form>
   )

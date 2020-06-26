@@ -7,7 +7,7 @@ const TasksList = () => {
   const { tasks } = useContext(TasksContext)
 
   return tasks.length ? (
-    <ul className="tasks_list">
+    <ul className="tasks_list flex">
       { tasks.map(task => {
         return <Task task={task} key={task.id}/>
       })}
