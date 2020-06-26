@@ -4,22 +4,9 @@
   color: #353326;
   font-family: 'Pangolin', cursive;
 }
- html {
-   border: 2px solid blue;
-   /* height: 100%; */
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
 
 body {
-  background-color: #4D321E;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* vertical-align: auto; */
-  /* height: 90%; */
-  border: 2px solid red;
+  background-color: #4C321E;
 }
 
 .flex {
@@ -31,7 +18,6 @@ body {
 
 .app {
   max-width: 50vw;
-  /* height: inherit; */
   padding: 3vw;
   border: 8px solid #76692B;
   border-radius: 13px;
@@ -58,7 +44,7 @@ h2 {
 
 .tasks_list {
   width: 95%;
-  padding: 3vw 0;
+  padding: 1vw 0;
   border: 8px solid #76692B;
   border-radius: 13px;
   background-color: #FFE670;
@@ -67,7 +53,7 @@ h2 {
 .task {
   width: 85%;
   margin: 0.5vw 0;
-  padding: 1vw;
+  padding: 0.5vw;
   font-size: 1.5vw;
   border: 8px solid #76692B;
   border-radius: 13px;
@@ -148,25 +134,48 @@ ul {
 
   .app {
     width: 80vw;
-    height: 90%;
+    height: inherit;
     max-width: 90vw;
   }
 
-  html {
-    height: 100%;
+  .tasks_list {
+    padding: 3vw 0;
+  }
+
+  .task {
+    padding: 1.5vw;
+  }
+
+  .thing_container {
+    font-size: 3vw;
+    max-width: 50vw;
+  }
+
+  .semaphorus {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .btn {
+    width: 8vw;
+    height: 3vw;
   }
 
 }
 
 @media (max-width: 599px) {
 
-  html {
+  /* html {
     height: 100%;
   }
-  
+
+  body {
+    height: 90%;
+  } */
+
   .app {
     width: 80vw;
-    height: 90%;
+    height: inherit;
     max-width: 90vw;
   }
 
@@ -184,6 +193,14 @@ ul {
     width: 10vw;
     height: 3.5vw;
     font-size: 2.5vw;
+  }
+
+  .tasks_list {
+    padding: 3vw 0;
+  }
+
+  .task {
+    margin: 1.5vw;
   }
 
 }
