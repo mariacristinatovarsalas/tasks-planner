@@ -4,12 +4,22 @@
   color: #353326;
   font-family: 'Pangolin', cursive;
 }
+ html {
+   border: 2px solid blue;
+   /* height: 100%; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
 
 body {
   background-color: #4D321E;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* vertical-align: auto; */
+  /* height: 90%; */
+  border: 2px solid red;
 }
 
 .flex {
@@ -21,7 +31,7 @@ body {
 
 .app {
   max-width: 50vw;
-  height: 100%;
+  /* height: inherit; */
   padding: 3vw;
   border: 8px solid #76692B;
   border-radius: 13px;
@@ -142,10 +152,18 @@ ul {
     max-width: 90vw;
   }
 
+  html {
+    height: 100%;
+  }
+
 }
 
 @media (max-width: 599px) {
 
+  html {
+    height: 100%;
+  }
+  
   .app {
     width: 80vw;
     height: 90%;
